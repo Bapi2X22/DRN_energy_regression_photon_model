@@ -1,0 +1,256 @@
+universe      = vanilla
+executable    = run_batch_electron.sh
+output        = logs/job_$(Process).out
+error         = logs/job_$(Process).err
+log           = logs/job_$(Process).log
+should_transfer_files = YES
+request_memory = 3.0 GB
++MaxRuntime = 6*24*60*60
+use_x509userproxy = True
+x509userproxy =  /afs/cern.ch/user/b/bbapi/x509up_u177868
+
++SingularityBind = "/cvmfs/unpacked.cern.ch/registry.hub.docker.com/fastml"
++SingularityBindCVMFS = True
+
+environment = "HOME=/afs/cern.ch/user/b/bbapi XrdSecPROTOCOL=gsi,unix"
+
+when_to_transfer_output = ON_EXIT_OR_EVICT
+
+request_cpus = 8
+
+arguments = batch_jobs_electron/job_0.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_100.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_101.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_102.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_103.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_104.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_105.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_106.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_107.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_108.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_109.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_10.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_110.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_111.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_112.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_113.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_114.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_115.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_116.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_117.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_11.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_12.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_13.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_14.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_15.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_16.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_17.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_18.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_19.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_1.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_20.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_21.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_22.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_23.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_24.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_25.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_26.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_27.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_28.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_29.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_2.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_30.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_31.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_32.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_33.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_34.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_35.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_36.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_37.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_38.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_39.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_3.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_40.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_41.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_42.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_43.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_44.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_45.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_46.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_47.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_48.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_49.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_4.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_50.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_51.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_52.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_53.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_54.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_55.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_56.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_57.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_58.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_59.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_5.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_60.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_61.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_62.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_63.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_64.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_65.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_66.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_67.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_68.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_69.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_6.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_70.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_71.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_72.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_73.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_74.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_75.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_76.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_77.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_78.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_79.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_7.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_80.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_81.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_82.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_83.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_84.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_85.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_86.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_87.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_88.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_89.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_8.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_90.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_91.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_92.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_93.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_94.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_95.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_96.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_97.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_98.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_99.txt electron_ideal_sample
+queue
+arguments = batch_jobs_electron/job_9.txt electron_ideal_sample
+queue
